@@ -1,2 +1,29 @@
-# nodemcu-led
-Nodemcu RGB LED strip control over WiFi
+# NodeMCU LED
+NodeMCU RGB LED strip control over WiFi
+
+## Parts required
+1x nodemcu (I used v3)<br>
+1x RGB LED strip (5 meter)<br>
+3x TIP41c transistors (or any with support 1.7 Amper)<br>
+3x small heat-sink for transistors (optional)<br>
+3x 3.3k-ohm resistors<br>
+1x 12v pwm fan<br>
+1x 12v 6A power supply<br>
+1x USB cable<br>
+1x breadboard or circuit board<br>
+some wires<br>
+Arduino IDE
+
+## Project Structure
+Server.ino	-> Main Arduino app source<br>
+Color.h			-> Color manager header<br>
+Color.cpp		-> Color manager source<br>
+mainPage.h	-> Web-Server HTML file<br>
+assets			-> Static CSS/JS files which can accessed from CDN<br>
+
+## How To Start
+Make the curcuit like the image below (will be added as soon).<br>
+Change your WIFI name, password and IP address in Server.ino line 10,11,12.<br>
+Connect your NodeMCU (or any arduino based board) via USB to PC and upload sketch to board.<br>
+<br>
+Full guide will be available on instructables
