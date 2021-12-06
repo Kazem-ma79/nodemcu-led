@@ -33,4 +33,5 @@ Make the curcuit like the image below (will be added as soon).<br>
 Change your WIFI name, password and IP address in Server.ino line 10,11,12.<br>
 Connect your NodeMCU (or any arduino based board) via USB to PC and upload sketch to board.<br>
 <br>
-Full guide will be available on instructables
+<strong>Full guide will be available on instructables.</strong><br>
+If you want board to get IP Address from DHCP remove 12,13,14,41 lines from Server.ino file.
