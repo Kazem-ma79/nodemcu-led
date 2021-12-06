@@ -1,0 +1,70 @@
+.flex-center,
+.container .buttons,
+.container .svg,
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+
+.container .svg {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.container .buttons {
+    justify-content: space-between;
+    width: 300px;
+}
+
+.container .buttons p {
+    background: #cfd0d0;
+    box-shadow: 5px 5px 13px #b6b7b7, -5px -5px 13px #e8e9e9;
+    padding: 10px 20px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+.container .buttons p:active {
+    box-shadow: inset 5px 5px 13px #b6b7b7, inset -5px -5px 13px #e8e9e9;
+}
+
+.wings {
+    border-radius: 50%;
+    animation: rotate linear infinite;
+    animation-duration: .128ms;
+    animation-play-state: paused;
+    padding: .25rem;
+    border-color: #08f;
+}
+
+.wings.work {
+    border: 0.1rem solid;
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .container .svg img {
+        min-width: 320px;
+    }
+}
+
+.form-label {
+    margin: 0;
+}

@@ -1,0 +1,59 @@
+body {
+    background: #343a40;
+    height: 100vh;
+}
+
+.color-container {
+    display: flex;
+    justify-content: center;
+}
+
+.color-picker {
+    background-color: #212529;
+    border-radius: 10px;
+}
+
+
+/* Override Pickr Defaults*/
+
+.pcr-app {
+    position: inherit;
+}
+
+.pcr-app .pcr-interaction {
+    justify-content: space-between;
+}
+
+.pcr-app .pcr-interaction .pcr-save {
+    background: #0d6efd;
+    order: 1;
+}
+
+.pcr-app .pcr-interaction .pcr-clear,
+.pcr-app .pcr-interaction .pcr-cancel {
+    background: #dc3545;
+}
+
+.pcr-app .pcr-interaction .pcr-clear {
+    order: 2;
+    margin-right: auto;
+}
+
+.pcr-app .pcr-interaction .pcr-cancel {
+    order: 3;
+}
+
+.pcr-app .pcr-swatches {
+    justify-content: space-between;
+    margin: .75em 0 0;
+}
+
+.pcr-button {
+    display: none;
+}
+
+input.btn {
+    border: 1px solid transparent;
+    border-radius: .25rem !important;
+    padding: 0.375rem 0.75rem !important;
+}
