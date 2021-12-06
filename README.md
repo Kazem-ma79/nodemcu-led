@@ -21,6 +21,13 @@ Color.cpp		-> Color manager source<br>
 mainPage.h	-> Web-Server HTML file<br>
 assets			-> Static CSS/JS files which can accessed from CDN<br>
 
+## CDN links
+I've uploaded files (minifed) to ArvanCloud CDN due to it's higher performance. Here's the links:<br>
+https://arduino.s3.ir-thr-at1.arvanstorage.com/style.min.css<br>
+https://arduino.s3.ir-thr-at1.arvanstorage.com/fan.min.css<br>
+https://arduino.s3.ir-thr-at1.arvanstorage.com/script.js<br>
+https://arduino.s3.ir-thr-at1.arvanstorage.com/fan.png
+
 ## How To Start
 Make the curcuit like the image below (will be added as soon).<br>
 Change your WIFI name, password and IP address in Server.ino line 10,11,12.<br>
