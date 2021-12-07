@@ -29,9 +29,12 @@ https://arduino.s3.ir-thr-at1.arvanstorage.com/script.js<br>
 https://arduino.s3.ir-thr-at1.arvanstorage.com/fan.png
 
 ## How To Start
-Make the curcuit like the image below (will be added as soon).<br>
+Make the curcuit like the image below.<br>
 Change your WIFI name, password and IP address in Server.ino line 10,11,12.<br>
 Connect your NodeMCU (or any arduino based board) via USB to PC and upload sketch to board.<br>
 <br>
 <strong>Full guide will be available on instructables.</strong><br>
 If you want board to get IP Address from DHCP remove 12,13,14,41 lines from Server.ino file.
+
+## Circuit Scheme
+![circuit](https://raw.githubusercontent.com/Kazem-ma79/nodemcu-led/main/git-files/NodeMCU-LED.png)
