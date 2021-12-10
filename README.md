@@ -40,5 +40,5 @@ If you want board to get IP Address from DHCP remove 12,13,14,41 lines from Serv
 ![circuit](https://raw.githubusercontent.com/Kazem-ma79/nodemcu-led/main/git-files/NodeMCU-LED.png)
 
 ## Web-Panel Screenshot
-You can access control panel from NodeMCU's IP address which is shown on Serial Monitor while device is turning on.
+You can access control panel from NodeMCU's IP address which is shown on Serial Monitor while device is turning on.<br>
 ![panel](https://raw.githubusercontent.com/Kazem-ma79/nodemcu-led/main/git-files/screenshot.png)
