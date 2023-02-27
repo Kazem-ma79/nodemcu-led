@@ -37,7 +37,7 @@ Connect your NodeMCU (or any arduino based board) via USB to PC and upload sketc
 If you want board to get IP Address from DHCP remove 12,13,14,41 lines from Server.ino file.
 
 ## Circuit Scheme
-![circuit](https://raw.githubusercontent.com/ImAgentW/nodemcu-led/main/git-files/NodeMCU-LED.png)
+![circuit](https://raw.githubusercontent.com/Kazem-ma79/nodemcu-led/main/git-files/NodeMCU-LED.png)
 
 ## Web-Panel Screenshot
 You can access control panel from NodeMCU's IP address which is shown on Serial Monitor while device is turning on.<br>
