@@ -29,7 +29,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 const int redLED    = 12;   // D6 GPIO12
 const int greenLED  = 13;   // D7 GPIO13
 const int blueLED   = 15;   // D8 GPIO15
-const int fanPIN    = 05;   // D1 GPIO4
+const int fanPIN    = 02;   // D1 GPIO2
 const int ledPIN    = 16;   // D0 GPIO16 BUILT-IN LED
 
 /* Objects */
