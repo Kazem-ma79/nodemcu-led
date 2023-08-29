@@ -1,10 +1,16 @@
-/* Liblaries */
+/* Libraries */
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 #include <ESP8266WebServer.h>
 #include <ArduinoJson.h>
 #include "Color.h"
 #include "mainpage.h"
+
+/* Libraries for OLED IC2 Display */
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
 
 /* Network settings */
 const char* ssid = "<WIFI-NAME>";
@@ -13,10 +19,17 @@ IPAddress ip(192,168,0,9);
 IPAddress gateway(192,168,0,1);
 IPAddress subnet(255,255,255,0);
 
+/* Configuring OLED IC2 Display */
+#define SCREEN_WIDTH 128 
+#define SCREEN_HEIGHT 64
+#define OLED_RESET     -1 
+#define SCREEN_ADDRESS 0x3C
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
+
 const int redLED    = 12;   // D6 GPIO12
 const int greenLED  = 13;   // D7 GPIO13
 const int blueLED   = 15;   // D8 GPIO15
-const int fanPIN    = 04;   // D2 GPIO4
+const int fanPIN    = 05;   // D1 GPIO4
 const int ledPIN    = 16;   // D0 GPIO16 BUILT-IN LED
 
 /* Objects */
@@ -53,6 +66,23 @@ void setup(void) {
   Serial.println(ssid);
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());
+
+  /* Setting up the OLED IC2 Display with initial configuration */ 
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setTextColor(WHITE);
+  display.setCursor(0,0);
+
+  /* OLED IC2 Display WiFi information display */
+  display.print("SSID: ");
+  display.println(ssid);
+  display.println("--------------------");
+
+  display.print("IP: ");
+  display.println(WiFi.localIP());
+  display.println("--------------------");
+
+  display.display();
 
   /* Set IP in webPage */
   webPage.replace("{IP_ADDRESS}", WiFi.localIP().toString());
