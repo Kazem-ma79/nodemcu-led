@@ -11,6 +11,7 @@ NodeMCU RGB LED strip control over WiFi
 1x 12v 6A power supply<br>
 1x USB cable<br>
 1x breadboard or circuit board<br>
+1x OLED IC2 Display (optional) <br>
 some wires<br>
 Arduino IDE
 
